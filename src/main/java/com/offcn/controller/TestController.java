@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 
 @RestController
 public class TestController {
-
+//jhj
     @GetMapping("/setSession")
     public String setSession(HttpSession session){
         session.setAttribute("msg","hello spring session");
