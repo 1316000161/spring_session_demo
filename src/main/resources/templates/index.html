@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<h1 th:text="${message}">&#45;&#45;&#45;&#45;</h1>
+    <br>
+    <span th:text="${user.id}"></span><br>
+    <span th:text="${user.name}"></span><br>
+    <span th:text="${user.birthday}"></span><br>
+    <hr>
+    <img th:src="${map.src1}"><br>
+    <img th:src="${map.src2}"><br>-->
+    <!--<table width="200px" style="text-align: center">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>birthday</th>
+            <th>index</th>
+        </tr>
+        <tr th:each="user,iterStat:${list}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.birthday}"></td>
+            <td th:text="${iterStat.index}">index</td>
+        </tr>
+    </table>-->
+
+    <!--给标签赋值-->
+    <h1 th:text="${userName}"></h1>
+    <!--给属性赋值-->
+    <input type="text" name="name" th:value="${userName}">
+    <em th:size="${userName}"></em>
+    <!--字符串拼接-->
+    <span th:text="'左边'+${userName}+'右边'"></span>
+    <span th:text="|左边${userName}右边|"></span>
+</body>
+</html>
